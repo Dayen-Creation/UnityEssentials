@@ -1,0 +1,16 @@
+#COPYRIGHT#
+
+using UnityEngine;
+
+   #ROOTNAMESPACEBEGIN#
+/// <summary>
+/// #NAME#
+/// </summary>
+public class #SCRIPTNAME# : MonoBehaviour
+{
+   private void Start()
+   {
+      #NOTRIM#
+   }
+}
+#ROOTNAMESPACEEND#

@@ -1,0 +1,11 @@
+#COPYRIGHT#
+
+   #ROOTNAMESPACEBEGIN#
+/// <summary>
+/// #NAME#
+/// </summary>
+public class #SCRIPTNAME# 
+{
+   #NOTRIM#
+}
+#ROOTNAMESPACEEND#

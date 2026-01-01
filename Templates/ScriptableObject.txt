@@ -1,0 +1,15 @@
+#COPYRIGHT#
+
+using UnityEngine;
+
+   #ROOTNAMESPACEBEGIN#
+/// <summary>
+/// #NAME#
+/// </summary>
+
+[CreateAssetMenu(fileName = "new#SCRIPTNAME#", menuName = "Data/#SCRIPTNAME#", order = 0)]
+public class #SCRIPTNAME# : ScriptableObject
+{
+   #NOTRIM#
+}
+#ROOTNAMESPACEEND#
