@@ -1,6 +1,4 @@
-///
-/// Copyright (c) DayenCreation. All rights reserved.
-///
+///https://www.youtube.com/@dayencreation
 
 using UnityEditor;
 using System.IO;
@@ -12,12 +10,13 @@ namespace DayenCreation.ProjectSetup
 		private static void GenerateFile(string path, string fileName)
 		{
 			path = $"Assets/_{PlayerSettings.productName}/Code/Editor/Templates/{path}";
-         string templateContent = File.ReadAllText(path);
+			string templateContent = File.ReadAllText(path);
 
 			var PLACEHOLDER_CR = "#COPYRIGHT#";
-         if (templateContent.Contains(PLACEHOLDER_CR))
+			if (templateContent.Contains(PLACEHOLDER_CR))
 			{
-				var copyright = $"///\n/// Copyright (c) {PlayerSettings.companyName}. All rights reserved.\n///"; ;
+				var copyright = $"///\n/// Copyright (c) 2026 {PlayerSettings.companyName}\n/// All rights reserved.\n///\n/// This file is part of a proprietary project.\n/// Unauthorized copying, modification, or distribution is prohibited.\n///";
+				
 				templateContent = templateContent.Replace(PLACEHOLDER_CR, copyright);
 				File.WriteAllText(path, templateContent);
 			}
