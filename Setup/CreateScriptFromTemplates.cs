@@ -19,12 +19,12 @@ namespace DayenCreation.ProjectSetup
 			path = $"Assets/_{PlayerSettings.productName}/Code/Editor/Templates/{path}";
 			string templateContent = File.ReadAllText(path);
 
-			var PLACEHOLDER_CR = "#COPYRIGHT#";
-			if (templateContent.Contains(PLACEHOLDER_CR))
+			var PLACEHOLDER_H = "#HEADER#";
+			if (templateContent.Contains(PLACEHOLDER_H))
 			{
-				var copyright = $"/// ------------------------------------------------------------------\n/// Copyright (c) 2026 {PlayerSettings.companyName}\n/// All rights reserved.\n///\n/// This file is part of a proprietary project.\n/// Unauthorized copying, modification, or distribution is prohibited.\n/// ------------------------------------------------------------------";
+				var header = $"/// ------------------------------------------------------------------\n/// Copyright (c) 2026 {PlayerSettings.companyName}\n/// All rights reserved.\n///\n/// This file is part of a proprietary project.\n/// Unauthorized copying, modification, or distribution is prohibited.\n/// ------------------------------------------------------------------";
 				
-				templateContent = templateContent.Replace(PLACEHOLDER_CR, copyright);
+				templateContent = templateContent.Replace(PLACEHOLDER_H, header);
 				File.WriteAllText(path, templateContent);
 			}
 

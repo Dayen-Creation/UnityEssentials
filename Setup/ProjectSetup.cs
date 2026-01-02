@@ -95,7 +95,7 @@ namespace DayenCreation.ProjectSetup
 
 		private static void SetUpProject()
 		{
-			companyName = companyName == "" || companyName == null ? "defaultCompany" : companyName;
+			companyName = companyName == "" || companyName == null ? "DefaultCompany" : companyName;
 			PlayerSettings.companyName = companyName;
 
 			if (productName != "") PlayerSettings.productName = productName;
