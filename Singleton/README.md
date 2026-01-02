@@ -1,6 +1,6 @@
 Original author: [git-amend](https://github.com/adammyhre/Unity-Utils.git) | [adammyhre](https://www.youtube.com/@git-amend)
 
-###License: unlicensed
+### License: unlicensed
 
-###Modifications:
+### Modifications:
 instance field set as private from protected
